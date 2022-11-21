@@ -13,8 +13,10 @@
 		AC15C14F292C030700CD9F93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC15C14E292C030700CD9F93 /* Preview Assets.xcassets */; };
 		AC15C15A292C048F00CD9F93 /* QueryTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C159292C048F00CD9F93 /* QueryTagView.swift */; };
 		AC15C15D292C05D200CD9F93 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C15C292C05D200CD9F93 /* VideoManager.swift */; };
-		AC15C15F292C07B500CD9F93 /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C15E292C07B500CD9F93 /* VideoCard.swift */; };
+		AC15C15F292C07B500CD9F93 /* VideoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C15E292C07B500CD9F93 /* VideoCardView.swift */; };
 		AC15C161292C0AE500CD9F93 /* SearchForVideosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C160292C0AE500CD9F93 /* SearchForVideosModel.swift */; };
+		AC15C163292C0C5B00CD9F93 /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = AC15C162292C0C5B00CD9F93 /* videoData.json */; };
+		AC15C165292C0C8E00CD9F93 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C164292C0C8E00CD9F93 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +27,10 @@
 		AC15C14E292C030700CD9F93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC15C159292C048F00CD9F93 /* QueryTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTagView.swift; sourceTree = "<group>"; };
 		AC15C15C292C05D200CD9F93 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
-		AC15C15E292C07B500CD9F93 /* VideoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
+		AC15C15E292C07B500CD9F93 /* VideoCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCardView.swift; sourceTree = "<group>"; };
 		AC15C160292C0AE500CD9F93 /* SearchForVideosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForVideosModel.swift; sourceTree = "<group>"; };
+		AC15C162292C0C5B00CD9F93 /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
+		AC15C164292C0C8E00CD9F93 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 		AC15C14D292C030700CD9F93 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				AC15C164292C0C8E00CD9F93 /* ModelData.swift */,
+				AC15C162292C0C5B00CD9F93 /* videoData.json */,
 				AC15C14E292C030700CD9F93 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -83,7 +89,7 @@
 			children = (
 				AC15C149292C030600CD9F93 /* ContentView.swift */,
 				AC15C159292C048F00CD9F93 /* QueryTagView.swift */,
-				AC15C15E292C07B500CD9F93 /* VideoCard.swift */,
+				AC15C15E292C07B500CD9F93 /* VideoCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			files = (
 				AC15C14F292C030700CD9F93 /* Preview Assets.xcassets in Resources */,
 				AC15C14C292C030700CD9F93 /* Assets.xcassets in Resources */,
+				AC15C163292C0C5B00CD9F93 /* videoData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,11 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC15C14A292C030600CD9F93 /* ContentView.swift in Sources */,
-				AC15C15F292C07B500CD9F93 /* VideoCard.swift in Sources */,
+				AC15C15F292C07B500CD9F93 /* VideoCardView.swift in Sources */,
 				AC15C15A292C048F00CD9F93 /* QueryTagView.swift in Sources */,
 				AC15C161292C0AE500CD9F93 /* SearchForVideosModel.swift in Sources */,
 				AC15C148292C030600CD9F93 /* PexelsVideoPlayerApp.swift in Sources */,
 				AC15C15D292C05D200CD9F93 /* VideoManager.swift in Sources */,
+				AC15C165292C0C8E00CD9F93 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  VideoCard.swift
+//  VideoCardView.swift
 //  PexelsVideoPlayer
 //
 //  Created by Ahmed Amin on 21/11/2022.
@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct VideoCard: View {
+struct VideoCardView: View {
+    var video: Video
+    
     var body: some View {
         ZStack {
             ZStack(alignment: .bottomLeading) {
-                AsyncImage(url: URL(string: "")) { image in
+                AsyncImage(url: URL(string: video.image ?? "")) { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -28,10 +30,10 @@ struct VideoCard: View {
                 
                 
                 VStack(alignment: .leading) {
-                    Text("30 Sec")
+                    Text("\(video.duration ?? 0) sec")
                         
                     
-                    Text("By XYZ")
+                    Text("By \(video.user?.name ?? "")")
                         .multilineTextAlignment(.leading)
                     
                 }
@@ -54,6 +56,6 @@ struct VideoCard: View {
 
 struct VideoCard_Previews: PreviewProvider {
     static var previews: some View {
-        VideoCard()
+        VideoCardView(video: previewVideo)
     }
 }

@@ -16,6 +16,11 @@ struct ContentView: View {
                 }
             }
             
+            ScrollView {
+                VideoCardView(video: previewVideo)
+            }
+            .frame(maxWidth: .infinity)
+            
         }
         .background(Color("AccentColor"))
     }
