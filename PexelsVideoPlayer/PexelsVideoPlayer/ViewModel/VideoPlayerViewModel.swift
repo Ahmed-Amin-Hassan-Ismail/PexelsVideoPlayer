@@ -49,5 +49,30 @@ final class VideoPlayerViewModel: ObservableObject {
         } catch {
             print("Error while fetching the pexels data ", error.localizedDescription)
         }
+    
+    //MARK: - DataTaskPublisher
+      /*
+            URLSession.shared.dataTaskPublisher(for: request)
+            .tryMap { (data,response) -> Data in
+                guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+                    print("Invalid status code \(response)")
+                    throw URLError(.badServerResponse)
+                }
+                return data
+            }
+            .decode(type: SearchForVideosModel.self, decoder: JSONDecoder())
+            .receive(on: RunLoop.main)
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    print("Error while completion", error)
+                case .finished:
+                    print("Completion has been completed")
+                }
+            } receiveValue: { result in
+                self.videos = result.videos ?? []
+            }
+            .store(in: &cancellables)
+       */
     }
 }
