@@ -27,7 +27,7 @@ final class VideoPlayerViewModel: ObservableObject {
     
     func findVideos(from query: Query) async {
         do {
-            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(query.rawValue)&per_page=1&orientation=portrait") else { fatalError("Missing URL") }
+            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(query.rawValue)&per_page=10&orientation=portrait") else { fatalError("Missing URL") }
             
             var request = URLRequest(url: url)
             request.setValue("563492ad6f91700001000001df8ffd693f0e4f66ae23207284dfa266", forHTTPHeaderField: "Authorization")
