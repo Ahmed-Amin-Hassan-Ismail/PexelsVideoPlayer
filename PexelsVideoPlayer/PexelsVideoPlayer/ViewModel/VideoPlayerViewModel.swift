@@ -40,8 +40,11 @@ final class VideoPlayerViewModel: ObservableObject {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let decodedData = try decoder.decode(SearchForVideosModel.self, from: data)
             
-            self.videos.removeAll()
-            self.videos = decodedData.videos ?? []
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.videos.removeAll()
+                self.videos = decodedData.videos ?? []
+            }
             
         } catch {
             print("Error while fetching the pexels data ", error.localizedDescription)
