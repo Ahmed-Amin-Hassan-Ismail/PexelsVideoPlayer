@@ -17,6 +17,7 @@
 		AC15C161292C0AE500CD9F93 /* SearchForVideosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C160292C0AE500CD9F93 /* SearchForVideosModel.swift */; };
 		AC15C163292C0C5B00CD9F93 /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = AC15C162292C0C5B00CD9F93 /* videoData.json */; };
 		AC15C165292C0C8E00CD9F93 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C164292C0C8E00CD9F93 /* ModelData.swift */; };
+		AC8E4956292CFD1E0065255C /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E4955292CFD1E0065255C /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AC15C160292C0AE500CD9F93 /* SearchForVideosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForVideosModel.swift; sourceTree = "<group>"; };
 		AC15C162292C0C5B00CD9F93 /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
 		AC15C164292C0C8E00CD9F93 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		AC8E4955292CFD1E0065255C /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				AC15C149292C030600CD9F93 /* ContentView.swift */,
 				AC15C159292C048F00CD9F93 /* QueryTagView.swift */,
 				AC15C15E292C07B500CD9F93 /* VideoCardView.swift */,
+				AC8E4955292CFD1E0065255C /* VideoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				AC15C15F292C07B500CD9F93 /* VideoCardView.swift in Sources */,
 				AC15C15A292C048F00CD9F93 /* QueryTagView.swift in Sources */,
 				AC15C161292C0AE500CD9F93 /* SearchForVideosModel.swift in Sources */,
+				AC8E4956292CFD1E0065255C /* VideoView.swift in Sources */,
 				AC15C148292C030600CD9F93 /* PexelsVideoPlayerApp.swift in Sources */,
 				AC15C15D292C05D200CD9F93 /* VideoManager.swift in Sources */,
 				AC15C165292C0C8E00CD9F93 /* ModelData.swift in Sources */,
@@ -330,8 +334,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +342,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedAmin.PexelsVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,8 +366,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +374,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedAmin.PexelsVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
