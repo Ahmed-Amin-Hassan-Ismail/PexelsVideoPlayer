@@ -18,6 +18,7 @@
 		AC15C163292C0C5B00CD9F93 /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = AC15C162292C0C5B00CD9F93 /* videoData.json */; };
 		AC15C165292C0C8E00CD9F93 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15C164292C0C8E00CD9F93 /* ModelData.swift */; };
 		AC8E4956292CFD1E0065255C /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E4955292CFD1E0065255C /* VideoView.swift */; };
+		AC8E495A292D03F70065255C /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E4959292D03F70065255C /* VideoPlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		AC15C162292C0C5B00CD9F93 /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
 		AC15C164292C0C8E00CD9F93 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		AC8E4955292CFD1E0065255C /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		AC8E4959292D03F70065255C /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		AC15C156292C03FC00CD9F93 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AC8E4959292D03F70065255C /* VideoPlayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8E495A292D03F70065255C /* VideoPlayerViewModel.swift in Sources */,
 				AC15C14A292C030600CD9F93 /* ContentView.swift in Sources */,
 				AC15C15F292C07B500CD9F93 /* VideoCardView.swift in Sources */,
 				AC15C15A292C048F00CD9F93 /* QueryTagView.swift in Sources */,
