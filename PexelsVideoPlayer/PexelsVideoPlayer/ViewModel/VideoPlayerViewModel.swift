@@ -11,7 +11,13 @@ import Foundation
 final class VideoPlayerViewModel: ObservableObject {
     
     @Published private(set) var videos: [Video] = []
-    @Published var selectedQuery: Query = .natural
+    @Published var selectedQuery: Query = .natural {
+        didSet {
+            Task.init {
+                await findVideos(from: selectedQuery)
+            }
+        }
+    }
     
     init() {
         Task.init {
